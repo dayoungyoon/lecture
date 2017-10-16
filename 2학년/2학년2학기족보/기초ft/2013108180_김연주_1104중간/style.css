@@ -1,0 +1,110 @@
+body{
+	font-family: '돋움';
+}
+#container{
+	border: 10px solid #E8E8E8;
+	width: 801px;
+}
+#header{
+	margin-top: 15px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#title_Wrap{
+	margin-bottom: 10px;
+}
+#title{
+	font-size:16px;
+	font-weight: bold;
+	color:#000000; 
+}
+#category{
+	font-size:12px;
+	color:#ABABAB; 
+}
+#info{
+	padding-top: 9px; 
+	border-top: 1px dotted #DADADA; 
+}
+.info_Name{
+	font-size: 12px;
+	color:#ABABAB;
+}
+.info_Date{
+	font-size: 12px;
+	color:#ABABAB;
+	margin-right: 9px;
+}
+.info_Modify{
+	font-size: 12px;
+	color:#ABABAB;
+	margin-left: 9px;
+	margin-right: 9px;
+}
+.info_Delete{
+	font-size: 12px;
+	color:#ABABAB;
+	margin-left: 9px;
+	margin-right: 9px;
+}
+.info_Open{
+	font-size: 12px;
+	color:#ABABAB;
+	margin-left: 9px;
+	margin-right: 9px;
+}
+.info_Send{
+	font-size: 12px;
+	color:#ABABAB;
+	margin-left: 9px;
+}
+.info_Address{
+	float: right;
+	color: #555555;
+	font-family: 'tahoma';
+	font-size: 11px;
+}
+#contents{
+	width: 771px;
+	margin-top: 40px;
+	margin-left: 10px;
+}
+#contents_Text{
+	margin-top: 20px;
+	font-size:12px;
+	color:#555555; 
+	line-height: 20px;
+}
+#tag{
+	margin-top: 30px;
+	margin-left: 10px;
+	margin-bottom: 50px;
+	font-size:12px;
+	color:#555555; 
+}
+#banner{
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+#ad_Daum{
+	font-size:11px;
+	color:#555555; 
+	text-decoration: underline;
+	margin-right: 10px;
+}
+.ad{
+	font-size:11px;
+	color:#555555; 
+}
+.bar1{
+	font-size: 12px;
+	margin-left:10px;
+	margin-right:10px;
+	color: #DDDDDD;
+}
+
+.bar2{
+	font-size: 11px;
+	color: #DDDDDD;
+}
+

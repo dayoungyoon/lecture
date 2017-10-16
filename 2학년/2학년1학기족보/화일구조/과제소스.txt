@@ -1,0 +1,224 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+#define ran(x,y) rand()%(y-x+1)+x 
+#define m 20
+
+typedef struct data{
+	int num;
+	struct data *next; //자기참조구조체
+}Data;//struct data를 Data로 재정의
+typedef struct run{
+	Data *node;//struct data *node 외부참조구조체
+	struct run *next;//자기참조구조체
+}Run;//struct run을 Run으로 재정의
+
+int iFile[300];//키값
+int curFile = 0;
+int buffer[20];//메모리
+int frozen[20];//동결
+Run head;
+
+Run* initRun(Data* n = NULL){
+	Run *nRun = new Run;
+	nRun->next = NULL;
+	nRun->node = n;
+	return nRun;
+}
+Data* initData(int n = -1){
+	Data *nData = new Data;
+	nData->next = NULL;
+	nData->num = n;
+	return nData;
+}
+int searchMin(){
+	int min = 1001;
+	int ad = 0;
+	for(int i = 0 ; i < m ; i ++){
+		if(min > buffer[i] && frozen[i] == 0){ 
+			min = buffer[i]; ad = i;
+		}
+	}
+	return ad;
+}
+void addData(Data *node,int num){
+	Data *temp = node;
+	Data *newNode = initData(num);
+	if(temp->num == -1){
+		temp->num = num; 
+		return;
+	}
+	while(temp->next){
+		temp = temp->next;
+	}
+	temp->next = newNode;
+}
+void addRun(Run *rNode, Data *dNode){
+	Run *temp = rNode;
+	Run *newNode = initRun(dNode);
+	if(temp->node == NULL){ 
+		temp->node = dNode; 
+		return;
+	}
+	while(temp->next){ 
+		temp = temp->next;
+	}
+	temp->next = newNode;
+}
+void printData(Data *data){
+	Data *p = data;
+	while(p){
+		printf("%d ",p->num);
+		p = p->next;
+	}
+}
+void printRun(Run *run){
+	Run *p = run;
+	int i=1;
+	while(p){
+		printf("%dRun :",i++);
+		printData(p->node);
+		p = p->next;
+		
+		puts("\n");
+	}
+}
+inline int checkEmpty(int *arr){
+	for(int i = 0 ; i < m ; i++){
+		if(arr[i] != -1) 
+			return 1;
+	}
+	return 0;
+}
+inline void meltFrozen(){
+	for(int i = 0 ; i < m ; i++){
+		frozen[i] = 0;
+	}
+}
+void init(Run *r){
+	int i;
+	head.next = r; 
+	srand( (unsigned)time(NULL));
+	for(i = 0 ; i < 300 ; i++) iFile[i] = ran(0,1000);
+	for(i = 0 ; i < m ; i++){ buffer[i] = iFile[curFile++]; }
+}
+void print(int *arr,int len){
+	for(int i = 0 ; i < len ; i++){ printf("%-3d ",arr[i]);}
+	puts("\n");
+}
+void divRun(Run *t1, Run *t2){
+	Run *temp = head.next;
+	while(temp){
+		addRun(t1,temp->node);
+		temp = temp->next;
+		if(temp){
+			addRun(t2,temp->node);
+			temp = temp->next;
+		}
+	}
+}
+Data* mergeRun(Run *t1, Run *t2 = NULL){
+	Data *tNode1 = t1->node;
+	Data *merge = initData();
+	if(t2 == NULL){
+		while(tNode1){
+			addData(merge,tNode1->num);
+			tNode1 = tNode1->next;
+		}
+	}else{
+		Data *tNode2 = t2->node;
+		while(!(tNode1 == NULL && tNode2 == NULL)){
+			if(tNode1 && tNode2){
+				if(tNode1->num >= tNode2->num){
+					addData(merge,tNode2->num);
+					tNode2 = tNode2->next;
+				}else if(tNode2->num > tNode1->num){
+					addData(merge, tNode1->num);
+					tNode1 = tNode1->next;
+				}
+			}else if(!tNode1){
+				addData(merge,tNode2->num);
+				tNode2 = tNode2->next;
+			}else if(!tNode2){
+				addData(merge,tNode1->num);
+				tNode1 = tNode1->next;
+			}
+		}
+	}
+	return merge;
+}
+void deleteData(Data *d){
+	Data *del = d;
+	Data *next;
+	while(del){
+		next = del->next;
+		delete del;
+		del = next;
+	}
+	del = NULL;
+}
+void deleteRun(Run *r){
+	Run *del = r;
+	Run *next;
+	while(del){
+		next = del->next;
+		deleteData(del->node);
+		delete del;
+		del = next;
+	}
+	del = NULL;
+}
+
+void main(){
+	 int min;
+	 int lastData;
+	 Run *iFile1 = initRun();
+	 Run *iFile2 = initRun();
+	 Run *oFile = initRun();
+	 Run *fRun = initRun();
+	 Data *fData = initData();
+	 init(fRun);
+	 printf("입력파일 출력\n");
+	 print(iFile,300);
+	 while(curFile < 300 || checkEmpty(buffer) == 1){
+		 while(checkEmpty(frozen)){
+			 min = searchMin();
+			 if(buffer[min] != -1){
+				 addData(fData,buffer[min]);
+				 lastData = buffer[min];
+			 }
+			 if(curFile < 300){
+				 buffer[min] = iFile[curFile++];
+				 if(lastData > buffer[min]){ frozen[min] = -1;};
+			 }else{
+				 buffer[min] = -1;
+				 frozen[min] = -1;
+			 }
+		 }	 
+		 addRun(fRun,fData);
+		 fData = initData();
+		 meltFrozen();
+	 }
+	 printf("런 생성 결과\n");
+	 printRun(head.next);
+	 int div=1;
+	 while(head.next->next){
+		 divRun(iFile1,iFile2);
+		 while(iFile1){
+			 fData = mergeRun(iFile1,iFile2);
+			 iFile1 = iFile1->next;
+			 if(iFile2){ iFile2 = iFile2->next; }
+			 addRun(oFile,fData);
+		 }		 
+		 deleteRun(head.next);
+		 printf("%d차 합병\n",div++);
+		 printRun(oFile);
+		 head.next = oFile;
+		 iFile1 = initRun();
+		 iFile2 = initRun();
+		 oFile = initRun();
+	 }
+	 printRun(head.next);
+	 deleteRun(head.next);
+}

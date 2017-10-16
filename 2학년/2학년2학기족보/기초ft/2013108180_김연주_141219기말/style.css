@@ -1,0 +1,848 @@
+﻿ul,ol{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+li,dt{float: left;}
+em{
+	font-weight: bold;
+	font-size: 12px;
+	font-family: "tahoma";
+	color: #f55c70;
+	font-style: normal;
+}
+a:link,a:visited,a:active,a:hover {text-decoration:none;}
+.text_color1{color: #000;}
+.text_color2{color: #4E64F5;}
+.text_color3{color: #666;}
+.text_color4{color: #4e59e7;}
+.text_color5{color: #333;}
+#header{
+	width:1024px;
+	height: 90px;
+	background: url(images/bg_head.gif);
+}
+#title{
+	float: left;
+	margin: 23px 8px 0px 23px; 
+}
+#search{float: left;}
+#search_bar{
+	border: 4px solid #4E64F8;
+	width: 318px;
+	height: 22px;
+	margin-top: 19px;
+	margin-right: 8px;
+}
+#daum_home{
+	text-indent: -9999em;
+	overflow: hidden;
+	width:65px;
+	height:26px;
+	background: url(images/logo_daum.gif)no-repeat;
+	float: left;
+}
+#local{
+	text-indent: -9999em;
+	overflow: hidden;
+	width:52px;
+	height:26px;
+	background: url(images/logo_map.gif)no-repeat;
+	float: left;
+}
+#search_button{
+	width: 49px;
+	height: 30px;
+	background: url(images/btn_map.gif) no-repeat;
+	background-position: 0px -125px;
+	text-indent:-9999em;
+	overflow:hidden;
+	border: 0px;
+}
+#search_tab{
+	font-family: "굴림";
+	font-size: 12px;
+	margin-top: 9px;
+	height: 15px;
+}
+#search_map{
+	font-weight: bold;
+	text-decoration: underline;
+	color: #4E64F5;
+}
+#search_street{}
+#search_subway{}
+#search_bus{}
+.bar{
+	font-size: 12px;
+	margin-left:12px;
+	margin-right:12px;
+	color: #C0C0C0;
+}
+#content{
+	margin-left: 27px;
+	width: 702px;
+	height: 1000px;
+	float: left;
+}
+#main_content{
+	width: 702px;
+	height: 180px; 
+}
+.sub_title{
+	float: left;
+	margin-top: 18px;
+	margin-bottom: 17px;
+}
+#place_name{
+	font-size: 16px;
+	color: #4e59e7;
+	font-weight: bold;	
+	margin: 0px;
+	margin-right: 13px;
+	float: left;
+}
+#category{
+	font-size: 11px;
+	color: #666;
+	font-family: "돋움";
+	float: left;
+	display: block;
+	margin-top: 21px;
+}
+#main_image{
+	width: 160px;
+	height: 125px;
+	margin-right:15px; 
+	clear: left;
+	background: url(images/image_chinafactory.jpg);
+	float: left;
+	text-indent: -9999em;
+	overflow: hidden;
+}
+#main_content_detail{float: left;}
+.info{
+	margin-top: 0px;
+	margin-bottom: 12px;
+}
+.info_title{
+	font-family: "굴림";
+	font-size: 12px;
+	color: #333;
+	font-weight: bold;
+}
+.info_content{
+	font-family: "굴림";
+	font-size: 12px;
+	color: #333;
+	margin-left: 66px;
+}
+.info_content_link{
+	font-family: "굴림";
+	font-size: 12px;
+	margin-left: 66px;
+}
+.star{
+	float: left;
+	width: 70px;
+	height: 16px;
+	margin: 0px;
+	margin-left: 15px;
+}
+.pt1{
+	background: url(images/icon_star.gif) no-repeat;
+	background-position: 0px -25px;
+	width: 70px;
+	height: 13px;
+}
+.pt2{
+	background: url(images/icon_star.gif) no-repeat;
+	width: 35px;
+	height: 13px;
+	position: relative;
+	top: -13px;
+	text-indent: -9999em;
+}
+.grade1{
+	height: 13px;
+	float: left;
+	margin-left: 6px;
+	margin-right: 9px;
+}
+.total{
+	color: #333;
+	font-family: "굴림";
+	font-size: 12px;
+}
+#number{
+	color: #4e59e7;
+	font-weight: bold;
+}
+#main_content_button{
+	clear: left;
+	margin-top: 0px;
+	text-indent: -9999em;
+	height: 25px;
+}
+#scrap{
+	background: url(images/btn_map.gif) no-repeat;
+	width: 54px;
+	height: 25px;
+	background-position: 0px -275px;
+	margin-right: 3px;
+}
+#review1{
+	background: url(images/btn_map.gif) no-repeat;
+	width: 65px;
+	height: 25px;
+	margin-right: 3px;
+	background-position: 0px -175px;
+}
+#line_appraisal1{
+	background: url(images/btn_map.gif) no-repeat;
+	width: 65px;
+	height: 25px;
+	margin-right: 3px;
+	background-position: 0px -225px;
+}
+#relation_place{
+	background: url(images/btn_map.gif) no-repeat;
+	width: 65px;
+	height: 25px;
+	background-position: 0px -325px;
+}
+#sub_content{width:687px;}
+#sub_content_tab_wrap{
+	height: 28px;
+	width: 687px;
+	margin-top: 18px;
+	border-bottom: 1px solid #c9c9c9;
+}
+#sub_content_tab{
+	height: 29px;
+	width: 331px;
+	text-indent: -9999em;
+	float: left;
+}
+#main_infomaion{
+	height: 29px;
+	width: 82px;
+	background: url(images/tab_menu.gif) no-repeat;
+	float: left;
+}
+#line_appraisal2{
+	height: 29px;
+	width: 81px;
+	background: url(images/tab_menu.gif) no-repeat;
+	background-position: -82px -29px;
+	float: left;
+}
+#review2{
+	height: 29px;
+	width: 63px;
+	background: url(images/tab_menu.gif) no-repeat;
+	background-position: -162px -29px;
+	float: left;
+}
+#media{
+	height: 29px;
+	width: 105px;
+	background: url(images/tab_menu.gif) no-repeat;
+	background-position: -225px -29px;
+	float: left;
+}
+#image_report{
+	background: url(images/ico_map.gif) no-repeat;
+	background-position: 0px -100px;
+	height: 11px;
+	width:12px;
+	text-indent: -99999em;
+	overflow: hidden;
+	float: right;
+	margin-top: 10px;
+	margin-right: 4px;
+}
+#report{
+	float: right;
+	font-family: "돋움";
+	font-size: 11px;
+	margin-top: 10px;
+}
+#sub_content_detail_wrap{
+	margin-top: 25px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #c9c9c9;
+}
+#sub_content_detail_title{
+	color: #000;
+	font-family: "돋움";
+	font-size: 14px;
+	font-weight: bold;
+}
+#sub_content_detail{margin-top: 15px;}
+.info_public_transportation{
+	margin: 0px;
+	width: 500px;
+	height: 25px;
+	margin-bottom: 10px;
+}
+.info_subway{
+	float: left;
+	background: url(images/btn_map.gif)no-repeat;
+	background-position: 0px -375px;
+	text-indent: -99999em;
+	overflow: hidden;
+	height: 25px;
+	width: 63px;
+}
+.subway_detail{
+	width: 500px;
+	height: 25px;
+}
+#subway_number_3{
+	float: left;
+	text-indent: -99999em;
+	overflow: hidden;
+	background: url(images/ico_traffic.gif)no-repeat;
+	background-position: 0px -25px;
+	width: 25px;
+	height: 19px;
+	margin-left: 13px;
+	margin-right: 5px;
+	margin-top: 3px;
+}
+#subway_number_2{
+	float: left;
+	text-indent: -99999em;
+	overflow: hidden;
+	background: url(images/ico_traffic.gif)no-repeat;
+	width: 25px;
+	height: 19px;
+	margin-left: 10px;
+	margin-right: 5px;
+	margin-top: 3px;
+}
+.station_name{
+	color: #333;
+	font-family: "돋움";
+	font-size: 13px;
+	float: left;
+	margin-top: 5px;
+}
+.info_bus{
+	clear: both;
+	float: left;
+	text-indent: -99999em;
+	overflow: hidden;
+	background: url(images/btn_map.gif)no-repeat;
+	background-position: 0px -425px;
+	height: 25px;
+	width: 56px;
+}
+.bus_detail{
+	width: 500px;
+	height: 25px;
+}
+.bus_stop{
+	float: left;
+	color: #333;
+	font-family: "돋움";
+	font-size: 13px;
+	margin-left: 22px;
+	margin-top: 5px;
+	margin-right: 7px;
+}
+#bus_color_blue{
+	float: left;
+	text-indent: -99999em;
+	overflow: hidden;
+	background: url(images/ico_traffic.gif)no-repeat;
+	background-position: 0px -50px;
+	width: 19px;
+	height: 19px;
+	margin-top: 3px;
+}
+#bus_color_red{
+	float: left;
+	text-indent: -99999em;
+	overflow: hidden;
+	background: url(images/ico_traffic.gif)no-repeat;
+	background-position: 0px -100px;
+	width: 19px;
+	height: 19px;
+	margin-top: 3px;
+}
+#bus_color_green{
+	float: left;
+	text-indent: -99999em;
+	overflow: hidden;
+	background: url(images/ico_traffic.gif)no-repeat;
+	background-position: 0px -75px;
+	width: 19px;
+	height: 19px;
+	margin-top: 3px;
+}
+.bus_number{
+	float: left;
+	color: #333;
+	font-family: "돋움";
+	font-size: 13px;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+#bus_type_ma{
+	float: left;
+	text-indent: -99999em;
+	overflow: hidden;
+	background: url(images/ico_traffic.gif)no-repeat;
+	background-position: 0px -150px;
+	width: 19px;
+	height: 19px;
+	margin-top: 3px;
+}
+#bus_type_zha{
+	float: left;
+	text-indent: -99999em;
+	overflow: hidden;
+	background: url(images/ico_traffic.gif)no-repeat;
+	background-position: 0px -200px;
+	width: 19px;
+	height: 19px;
+	margin-top: 3px;
+}
+#bus_type_zic{
+	float: left;
+	text-indent: -99999em;
+	overflow: hidden;
+	background: url(images/ico_traffic.gif)no-repeat;
+	background-position: 0px -175px;
+	width: 19px;
+	height: 19px;
+	margin-top: 3px;
+}
+#bus_sunday{
+	float: left;
+	text-indent: -99999em;
+	overflow: hidden;
+	background: url(images/ico_traffic.gif)no-repeat;
+	background-position: 0px -125px;
+	width: 19px;
+	height: 19px;
+	margin-top: 3px;
+}
+#bus_holiday{
+	float: left;
+	text-indent: -99999em;
+	overflow: hidden;
+	background: url(images/ico_traffic.gif)no-repeat;
+	background-position: 0px -225px;
+	width: 19px;
+	height: 19px;
+	margin-top: 3px;
+}
+#menu_content{
+	width: 687px;
+	margin-top: 25px;
+}
+#menu_content_title{
+	color: #000;
+	font-family: "돋움";
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+#menu_content_detail_wrap{
+	width: 675px;
+	height: 200px;
+}
+#menu1{
+	width: 337px;
+	height: 70px;
+	float: left;
+	line-height: 18px;
+}
+#menu2{
+	width: 337px;
+	height: 70px;
+	float: left;
+	line-height: 18px;
+}
+#menu3{
+	width: 337px;
+	height: 70px;
+	float: left;
+	line-height: 18px;
+	margin-top: 20px;
+}
+#menu4{
+	width: 337px;
+	height: 70px;
+	float: left;
+	line-height: 18px;
+	margin-top: 20px;
+}
+.menu_content_detail{
+	width:  230px;
+	height: 70px;
+	float: left;
+	font-family: "굴림";
+	font-size: 12px;
+}
+#menu_image1{
+	width: 82px;
+	height: 70px;
+	background: url(images/menu1.jpg);
+	margin-right: 14px;
+	float: left;
+	text-indent: -9999em;
+	overflow: hidden;
+}
+#menu_image2{
+	width: 82px;
+	height: 70px;	
+	background: url(images/menu2.jpg);
+	margin-right: 14px;
+	float: left;
+	text-indent: -9999em;
+	overflow: hidden;
+}
+#menu_image3{
+	width: 82px;
+	height: 70px;	
+	background: url(images/menu3.jpg);
+	margin-right: 14px;
+	float: left;
+	text-indent: -9999em;
+	overflow: hidden;
+}
+#menu_image4{
+	width: 82px;
+	height: 70px;
+	background: url(images/menu4.jpg);
+	margin-right: 14px;
+	float: left;
+	text-indent: -9999em;
+	overflow: hidden;
+}
+.menu_name{
+	margin-top: 2px;
+	font-weight: bold;
+}
+.menu_price{
+	color: #4e59e7;
+	font-weight: bold;
+}
+.menu_detail{color: #333;}
+#side_content{
+	margin-top: 13px;
+	margin-left: 30px;
+	float: left;
+	width: 250px;
+	margin-right: 15px;
+}
+#banner_image{
+	width: 250px;
+	height: 250px;
+	background: url(images/bnr_250.jpg);
+	margin-bottom: 9px;
+	text-indent: -9999em;
+	overflow: hidden;
+}
+#surrounding_place{
+	width: 250px;
+	border-left: 1px solid #e2e2e2;
+	border-right: 1px solid #e2e2e2;
+	border-bottom: 1px solid #e2e2e2;
+}
+#surrounding_place_title_wrap{
+	background: url(images/bg_rwing.gif);
+	width: 250px;
+	height: 30px;
+}
+#surrounding_place_title{
+	text-indent: -9999em;
+	overflow: hidden;
+	width: 88px;
+	height: 11px;
+	background: url(images/tit_map.gif)no-repeat;
+	position: relative;
+	top: 10px;
+	margin-left: 15px;
+}
+#place1{
+	width: 190px;
+	height: 45px;
+	margin-left: 14px;
+	margin-top: 12px;
+	margin-bottom: 10px;
+}
+#place2{
+	width: 190px;
+	height: 45px;
+	margin-left: 14px;
+	margin-top: 12px;
+	margin-bottom: 10px;
+}
+#place3{
+	width: 190px;
+	height: 45px;
+	margin-left: 14px;
+	margin-top: 12px;
+	margin-bottom: 10px;
+}
+#place4{
+	width: 190px;
+	height: 45px;
+	margin-left: 14px;
+	margin-top: 12px;
+	margin-bottom: 10px;
+}
+#place5{
+	width: 190px;
+	height: 45px;
+	margin-left: 14px;
+	margin-top: 12px;
+	margin-bottom: 10px;
+}
+#place_image1{
+	width: 60px;
+	height: 45px;
+	background:url(images/sukdo.jpg);
+	margin-right: 8px;
+	text-indent: -9999em;
+	overflow: hidden;
+	float: left;
+}
+#place_image2{
+	width: 60px;
+	height: 45px;
+	background:url(images/manju.jpg);
+	margin-right: 8px;
+	text-indent: -9999em;
+	overflow: hidden;
+	float: left;
+}
+#place_image3{
+	width: 60px;
+	height: 45px;
+	background:url(images/chinafactory.jpg);
+	margin-right: 8px;
+	text-indent: -9999em;
+	overflow: hidden;
+	float: left;
+}
+#place_image4{
+	width: 60px;
+	height: 45px;
+	background:url(images/sul.jpg);
+	margin-right: 8px;
+	text-indent: -9999em;
+	overflow: hidden;
+	float: left;
+}
+#place_image5{
+	width: 60px;
+	height: 45px;
+	background:url(images/jenam.jpg);
+	margin-right: 8px;
+	text-indent: -9999em;
+	overflow: hidden;
+	float: left;
+}
+.surrounding_place_detail{float: left;}
+#surrounding_place_detail_wrap{
+	width: 250px;
+	margin-bottom: 12px;
+}
+.place_category{
+	font-family: "돋움";
+	font-size: 11px;
+	color: #666;
+}
+.place_name{
+	font-family: "굴림";
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: 5px;
+}
+.star_little{
+	width: 55px;
+	height: 10px;
+	float: left;
+	margin-top:4px; 
+}
+.pt3{
+	width: 55px;
+	height: 10px;
+	background: url(images/icon_star.gif)no-repeat;
+	background-position: 0px -75px;
+}
+.pt4{
+	position: relative;
+	top: -10px;
+	text-indent: -9999em;
+	width: 55px;
+	height: 10px;
+	background: url(images/icon_star.gif)no-repeat;
+	background-position: 0px -50px;
+}
+.grade2{
+	font-size: 11px;
+	float: left;
+	margin-left: 6px;
+	margin-top: 2px;
+}
+.pt5{
+	position: relative;
+	top: -10px;
+	text-indent: -9999em;
+	width: 55px;
+	height: 10px;
+	background: url(images/icon_star.gif)no-repeat;
+	background-position: 0px -50px;
+}
+.pt6{
+	position: relative;
+	top: -10px;
+	text-indent: -9999em;
+	width: 55px;
+	height: 10px;
+	background: url(images/icon_star.gif)no-repeat;
+	background-position: 0px -50px;
+}
+.pt7{
+	position: relative;
+	top: -10px;
+	text-indent: -9999em;
+	width: 55px;
+	height: 10px;
+	background: url(images/icon_star.gif)no-repeat;
+	background-position: 0px -50px;
+}
+.pt8{
+	position: relative;
+	top: -10px;
+	text-indent: -9999em;
+	width: 55px;
+	height: 10px;
+	background: url(images/icon_star.gif)no-repeat;
+	background-position: 0px -50px;
+}
+#rank{
+	width: 250px;
+	border-left: 1px solid #e2e2e2;
+	border-right: 1px solid #e2e2e2;
+	border-bottom: 1px solid #e2e2e2;
+	margin-top: 9px;
+}
+#rank_tab{
+	width: 251px;
+	height: 30px;
+	float: left;
+}
+#rank_tastyplace{
+	width: 125px;
+	height: 30px;
+	background: url(images/tab_menu.gif);
+	background-position: 0px -75px;
+	text-indent: -9999em;
+	overflow: hidden;
+	float: left;
+}
+#rank_local{
+	width: 125px;
+	height: 30px;
+	background: url(images/tab_menu.gif);
+	background-position: -125px -105px;
+	text-indent: -9999em;
+	overflow: hidden;
+	float: left;
+}
+#rank_list_wrap{
+	width: 250px;
+	height: 220px;
+	padding-top: 41px;
+	padding-left: 15px;
+	margin-bottom: 13px;
+}
+.rank_list{height: 240px;}
+.rank_list li{
+	width: 217px;
+	margin-bottom: 13px;
+	font-family: "굴림";
+	font-size:12px;
+	color: #333;
+	padding-left: 21px;
+}
+.num_sprites{
+	background: url(images/number.gif) no-repeat;
+	font-family: "굴림";
+	font-size:12px;
+	color: #333;
+	width: 13px;
+	height: 10px;
+}
+.rank_list .no1{
+	background-position:0px 0px;
+	font-family: "굴림";
+	font-size:12px;
+	font-weight: bold;
+}
+.rank_list .no2{background-position:0px -25px;}
+.rank_list .no3{background-position:0px -50px;}
+.rank_list .no4{background-position:0px -75px;}
+.rank_list .no5{background-position:0px -100px;}
+.rank_list .no6{background-position:0px -125px;}
+.rank_list .no7{background-position:0px -150px;}
+.rank_list .no8{background-position:0px -175px;}
+.rank_list .no9{background-position:0px -200px;}
+.rank_list .no10{background-position:0px -225px;}
+.tastyplace_category{
+	font-family: "굴림";
+	font-size:12px;
+}
+.change_sprites{
+	background:url(images/ico_map.gif)no-repeat;
+	float: right;
+	font-size: 11px;
+	font-family: "tahoma";
+	color:#999;
+	width: 7px;
+	height: 10px;
+	padding-left: 11px;
+	font-weight: normal;
+	margin-right: 15px;
+}
+.nochange{background-position:0px 2px;}
+.up{background-position:0px -23px;}
+.down{background-position:0px -48px;}
+#rank_bottom{
+	background-color: #f5f5f5;
+	width: 250px;
+	height: 26px;
+	text-align: center;
+}
+#previous_page{
+	overflow: hidden;
+	text-indent: -99999em;
+	width: 18px;
+	height: 17px;
+	background: url(images/btn_map.gif);
+	background-position: 0px -50px;
+	margin-right: 6px;
+	float: left;
+}
+#next_page{
+	overflow: hidden;
+	text-indent: -99999em;
+	width: 18px;
+	height: 17px;
+	background: url(images/btn_map.gif);
+	background-position: 0px -25px;
+	float: left;
+}
+#page_button{
+	display: inline-block;
+	margin-top: 5px;
+}
